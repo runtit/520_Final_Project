@@ -1,0 +1,38 @@
+{
+    "name": "RedRobot",
+    "type": "dynamic",
+    "description": "Red team robot - pushes blocks into the left goal zone (x < -280)",
+    "shape": [
+        { "x": -13, "y": -13 },
+        { "x":  13, "y": -13 },
+        { "x":  13, "y":  13 },
+        { "x": -13, "y":  13 }
+    ],
+    "friction": {
+        "collision": 8,
+        "linear":    30,
+        "rotational": 500
+    },
+    "sensors": [
+        {
+            "type":      "range",
+            "name":      "front_range",
+            "location":  { "x": 13, "y": 0 },
+            "direction": 0
+        },
+        {
+            "type":      "range",
+            "name":      "left_range",
+            "location":  { "x": 13, "y": 0 },
+            "direction": 1.0
+        },
+        {
+            "type":      "range",
+            "name":      "right_range",
+            "location":  { "x": 13, "y": 0 },
+            "direction": -1.0
+        }
+    ],
+    "mass": 1.0,
+    "controller": "lib/red_robot.so"
+}

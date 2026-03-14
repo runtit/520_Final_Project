@@ -1,0 +1,21 @@
+{
+    "name": "BlockHex",
+    "type": "dynamic",
+    "description": "Hexagonal scoring block - light and easy to redirect",
+    "shape": [
+        { "x":  9.0, "y":  0.0 },
+        { "x":  4.5, "y":  7.8 },
+        { "x": -4.5, "y":  7.8 },
+        { "x": -9.0, "y":  0.0 },
+        { "x": -4.5, "y": -7.8 },
+        { "x":  4.5, "y": -7.8 }
+    ],
+    "friction": {
+        "collision": 3,
+        "linear":    8,
+        "rotational": 90
+    },
+    "sensors": [],
+    "mass": 0.3,
+    "controller": "lib/block.so"
+}

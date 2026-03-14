@@ -1,0 +1,23 @@
+{
+    "name": "BlockOctagon",
+    "type": "dynamic",
+    "description": "Octagonal scoring block - approximates a circle, medium weight",
+    "shape": [
+        { "x":  11.0, "y":   0.0 },
+        { "x":   7.8, "y":   7.8 },
+        { "x":   0.0, "y":  11.0 },
+        { "x":  -7.8, "y":   7.8 },
+        { "x": -11.0, "y":   0.0 },
+        { "x":  -7.8, "y":  -7.8 },
+        { "x":   0.0, "y": -11.0 },
+        { "x":   7.8, "y":  -7.8 }
+    ],
+    "friction": {
+        "collision": 3,
+        "linear":    10,
+        "rotational": 110
+    },
+    "sensors": [],
+    "mass": 0.6,
+    "controller": "lib/block.so"
+}

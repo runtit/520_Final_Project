@@ -1,0 +1,115 @@
+{
+    "name": "Robot Arena: Competitive Block Battle",
+    "ip":   "0.0.0.0",
+    "port": 8765,
+
+    "buttons": [
+        {
+            "name": "reset_game",
+            "label": "Reset",
+            "style": { "background": "#444", "color": "white", "border-color": "#888" }
+        }
+    ],
+
+    "agents": [
+
+        {
+            "definition": "defs/red_robot.json",
+            "style":    { "fill": "red", "stroke": "darkred" },
+            "position": { "x": 200, "y": -40, "theta": 3.14159 }
+        },
+        {
+            "definition": "defs/blue_robot.json",
+            "style":    { "fill": "cornflowerblue", "stroke": "darkblue" },
+            "position": { "x": -200, "y": 40, "theta": 0 }
+        },
+        {
+            "definition": "defs/game_manager.json",
+            "style":    { "fill": "none", "stroke": "none" },
+            "position": { "x": 0, "y": 0, "theta": 0 }
+        },
+
+        { "definition": "defs/block_sm.json", "style": { "fill": "#87ceeb", "stroke": "#4a9dc7" },
+          "position": { "x": -220, "y": -130, "theta": 0 } },
+        { "definition": "defs/block_sm.json", "style": { "fill": "#87ceeb", "stroke": "#4a9dc7" },
+          "position": { "x": -140, "y": -130, "theta": 0 } },
+        { "definition": "defs/block_sm.json", "style": { "fill": "#87ceeb", "stroke": "#4a9dc7" },
+          "position": { "x":  -50, "y": -130, "theta": 0 } },
+        { "definition": "defs/block_sm.json", "style": { "fill": "#87ceeb", "stroke": "#4a9dc7" },
+          "position": { "x":   40, "y": -130, "theta": 0 } },
+        { "definition": "defs/block_sm.json", "style": { "fill": "#87ceeb", "stroke": "#4a9dc7" },
+          "position": { "x":  130, "y": -130, "theta": 0 } },
+        { "definition": "defs/block_sm.json", "style": { "fill": "#87ceeb", "stroke": "#4a9dc7" },
+          "position": { "x": -240, "y":  -40, "theta": 0 } },
+        { "definition": "defs/block_sm.json", "style": { "fill": "#87ceeb", "stroke": "#4a9dc7" },
+          "position": { "x":  240, "y":  -40, "theta": 0 } },
+
+        { "definition": "defs/block.json",    "style": { "fill": "gold",    "stroke": "#888" },
+          "position": { "x": -120, "y":  -40, "theta": 0 } },
+        { "definition": "defs/block.json",    "style": { "fill": "gold",    "stroke": "#888" },
+          "position": { "x":    0, "y":  -40, "theta": 0 } },
+        { "definition": "defs/block.json",    "style": { "fill": "gold",    "stroke": "#888" },
+          "position": { "x":  120, "y":  -40, "theta": 0 } },
+        { "definition": "defs/block.json",    "style": { "fill": "gold",    "stroke": "#888" },
+          "position": { "x": -240, "y":   50, "theta": 0 } },
+        { "definition": "defs/block_oct.json","style": { "fill": "#90ee90", "stroke": "#3a8a3a" },
+          "position": { "x": -120, "y":   50, "theta": 0 } },
+        { "definition": "defs/block_oct.json","style": { "fill": "#90ee90", "stroke": "#3a8a3a" },
+          "position": { "x":    0, "y":   50, "theta": 0 } },
+        { "definition": "defs/block_oct.json","style": { "fill": "#90ee90", "stroke": "#3a8a3a" },
+          "position": { "x":  120, "y":   50, "theta": 0 } },
+
+        { "definition": "defs/block_lg.json", "style": { "fill": "#ff8c69", "stroke": "#c0522a" },
+          "position": { "x":  240, "y":   50, "theta": 0 } },
+        { "definition": "defs/block_lg.json", "style": { "fill": "#ff8c69", "stroke": "#c0522a" },
+          "position": { "x": -220, "y":  140, "theta": 0 } },
+        { "definition": "defs/block_lg.json", "style": { "fill": "#ff8c69", "stroke": "#c0522a" },
+          "position": { "x": -100, "y":  140, "theta": 0 } },
+        { "definition": "defs/block_lg.json", "style": { "fill": "#ff8c69", "stroke": "#c0522a" },
+          "position": { "x":   20, "y":  140, "theta": 0 } },
+        { "definition": "defs/block_lg.json", "style": { "fill": "#ff8c69", "stroke": "#c0522a" },
+          "position": { "x":  150, "y":  140, "theta": 0 } },
+        { "definition": "defs/block_lg.json", "style": { "fill": "#ff8c69", "stroke": "#c0522a" },
+          "position": { "x":  240, "y":  140, "theta": 0 } }
+    ],
+
+    "statics": [
+
+        {
+            "style": { "fill": "#cc3333", "stroke": "none" },
+            "shape": [
+                { "x": -350, "y": -200 },
+                { "x": -340, "y": -200 },
+                { "x": -340, "y":  200 },
+                { "x": -350, "y":  200 }
+            ]
+        },
+        {
+            "style": { "fill": "#3366cc", "stroke": "none" },
+            "shape": [
+                { "x":  340, "y": -200 },
+                { "x":  350, "y": -200 },
+                { "x":  350, "y":  200 },
+                { "x":  340, "y":  200 }
+            ]
+        },
+        {
+            "style": { "fill": "#555555", "stroke": "none" },
+            "shape": [
+                { "x": -350, "y":  190 },
+                { "x":  350, "y":  190 },
+                { "x":  350, "y":  200 },
+                { "x": -350, "y":  200 }
+            ]
+        },
+        {
+            "style": { "fill": "#555555", "stroke": "none" },
+            "shape": [
+                { "x": -350, "y": -200 },
+                { "x":  350, "y": -200 },
+                { "x":  350, "y": -190 },
+                { "x": -350, "y": -190 }
+            ]
+        }
+    ]
+}

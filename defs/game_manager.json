@@ -1,0 +1,19 @@
+{
+    "name": "GameManager",
+    "type": "static",
+    "description": "Invisible coordinator: manages score, timer, and reset",
+    "shape": [
+        { "x": -1, "y": -1 },
+        { "x":  1, "y": -1 },
+        { "x":  1, "y":  1 },
+        { "x": -1, "y":  1 }
+    ],
+    "friction": {
+        "collision": 0,
+        "linear":    9999,
+        "rotational": 9999
+    },
+    "sensors": [],
+    "mass": 9999,
+    "controller": "lib/game_manager.so"
+}

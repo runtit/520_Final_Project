@@ -1,0 +1,19 @@
+{
+    "name": "Block",
+    "type": "dynamic",
+    "description": "Scoring block - pushed by robots into goal zones",
+    "shape": [
+        { "x": -10, "y": -10 },
+        { "x":  10, "y": -10 },
+        { "x":  10, "y":  10 },
+        { "x": -10, "y":  10 }
+    ],
+    "friction": {
+        "collision": 3,
+        "linear":    10,
+        "rotational": 120
+    },
+    "sensors": [],
+    "mass": 0.5,
+    "controller": "lib/block.so"
+}

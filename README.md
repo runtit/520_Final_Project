@@ -113,4 +113,4 @@ When fewer than 15 blocks are active, scored blocks automatically re-enter the a
 
 - **Enviro / Elma**: [klavinslab](https://github.com/klavinslab/enviro) — multi-agent simulation framework used as the foundation.
 - **Chipmunk2D**: physics engine used by Enviro.
-- Course materials and examples from *ECE/CSE P 520 – Embedded Systems Programming*, University of Washington.
+- Course materials and examples from *EE P 520 A Wi 26: Software Engineering For Embedded Applications*, University of Washington.
